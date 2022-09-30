@@ -15,8 +15,6 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   color: var(--primary-text-color);
   background-color: var(--primary-background-color);
@@ -58,12 +56,12 @@ body {
   letter-spacing: 0.02em;
 }
 
-.nav-list .link.current {
-  color: var(--accent-color);
-}
-
 .nav-link {
   color: var(--title-text-color);
+}
+
+.current {
+  color: var(--accent-color);
 }
 
 .contacts-link {
@@ -147,6 +145,7 @@ body {
 .team-section {
   background-color: var(--secondary-background-color);
 }
+
 .team-title {
   font-weight: 500;
   font-size: 16px;
