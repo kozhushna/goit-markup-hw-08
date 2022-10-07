@@ -43,8 +43,7 @@ body {
 }
 
 .container {
-  width: 100%;
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -136,12 +135,12 @@ body {
 }
 
 .hero-section {
+  padding: 200px 0;
   text-align: center;
   background-color: var(--dark-beckground-color);
 }
 
 .hero-title {
-  padding: 106px 0 0;
   margin: 0 auto 30px auto;
   max-width: 696px;
   font-weight: 900;
@@ -162,7 +161,6 @@ body {
 }
 
 .hero-button {
-  margin: 0 0 106px;
   padding: 10px 32px;
   font-family: inherit;
   font-weight: 700;
@@ -319,7 +317,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 0 34px;
+  margin: 0 0 50px;
 }
 
 .filter-item:not(:last-child) {
