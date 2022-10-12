@@ -140,6 +140,14 @@ body {
   background-color: var(--dark-beckground-color);
 }
 
+.overlay {
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/hero.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1600px;
+}
+
 .hero-title {
   margin: 0 auto 30px auto;
   max-width: 696px;
@@ -194,14 +202,12 @@ body {
 
 .features {
   display: flex;
+  flex-wrap: wrap;
+  gap: 0px 30px;
 }
 
 .features-item {
   width: 270px;
-}
-
-.features-item:not(:last-child) {
-  margin: 0 30px 0 0;
 }
 
 .features-title {
