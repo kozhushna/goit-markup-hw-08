@@ -12,6 +12,7 @@
   --border-portfolio-cards: #eeeeee;
   --address-link-color: rgba(255, 255, 255, 0.6);
   --clients-color: #afb1b8;
+  --soc-link-background-dark-color: rgba(255, 255, 255, 0.1);
   /*Найбільш повторювана тінь на кнопках*/
   --button-primary-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -380,12 +381,18 @@ body {
   background-color: var(--dark-beckground-color);
 }
 
+.footer-container {
+  display: flex;
+  align-items: baseline;
+  gap: 70px;
+}
+
 .logo-light {
   color: var(--white-text-color);
 }
 
 .address-box {
-  max-width: 231px;
+  width: 231px;
 }
 
 .address {
@@ -404,6 +411,43 @@ body {
 
 .address-link {
   color: var(--address-link-color);
+}
+
+.soc-link-text {
+  margin: 0 0 20px;
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+}
+
+.soc-list-footer {
+  display: flex;
+  gap: 10px;
+}
+
+.soc-item-footer {
+  flex-basis: calc((100% - 30px) / 4);
+}
+
+.soc-link-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--soc-link-background-dark-color);
+}
+
+.soc-icon-footer {
+  fill: var(--white-text-color);
+}
+
+.soc-link-footer:hover,
+.soc-link-footer:focus {
+  background-color: var(--accent-color);
 }
 
 .filter {
