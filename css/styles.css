@@ -15,6 +15,7 @@
   --soc-link-background-dark-color: rgba(255, 255, 255, 0.1);
   /*Найбільш повторювана тінь на кнопках*/
   --button-primary-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  --background-works-overlay-color: rgba(47, 48, 58, 0.8);
 }
 
 p,
@@ -121,6 +122,7 @@ body {
 }
 
 .nav-link {
+  position: relative;
   display: block;
   padding: 32px 0;
   color: var(--title-text-color);
@@ -128,6 +130,18 @@ body {
 
 .current {
   color: var(--accent-color);
+}
+
+.current::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
 }
 
 .contacts-link {
@@ -256,14 +270,32 @@ body {
 
 .works {
   display: flex;
+  gap: 30px;
 }
 
-.works-item:not(:last-child) {
-  margin: 0 30px 0 0;
+.works-item {
+  position: relative;
 }
 
 .works-section {
   padding-top: 0;
+}
+
+.work-title {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+  background-color: var(--background-works-overlay-color);
 }
 
 .team-section {
