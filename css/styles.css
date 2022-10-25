@@ -18,7 +18,7 @@
   --works-overlay-background-color: rgba(47, 48, 58, 0.8);
   --portfolio-overlay-background-color: rgba(33, 150, 243, 0.9);
   --backdrop-overlay-background-color: rgba(0, 0, 0, 0.2);
-  --base-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --base-transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 p,
@@ -196,7 +196,8 @@ body {
   cursor: pointer;
 }
 
-.hero-button {
+.hero-button,
+.subscribe-button {
   padding: 10px 32px;
   font-family: inherit;
   font-weight: 700;
@@ -207,11 +208,15 @@ body {
   color: var(--white-text-color);
   background-color: var(--accent-color);
   box-shadow: var(--button-primary-box-shadow);
+  transition: background-color var(--base-transition);
 }
 
 .hero-button:hover,
 .hero-button:focus,
-.hero-button:active {
+.hero-button:active,
+.subscribe-button:hover,
+.subscribe-button:focus,
+.subscribe-button:active {
   background-color: var(--hero-button-active-color);
 }
 
@@ -269,6 +274,10 @@ body {
 .close:focus {
   cursor: pointer;
   fill: var(--accent-color);
+}
+
+textarea {
+  resize: none;
 }
 
 .visually-hidden {
@@ -493,7 +502,8 @@ body {
   color: var(--address-link-color);
 }
 
-.soc-link-text {
+.soc-link-text,
+.form-subscribe-text {
   margin: 0 0 20px;
   font-weight: 700;
   line-height: calc(16 / 14);
@@ -513,6 +523,38 @@ body {
 .soc-link-footer:hover,
 .soc-link-footer:focus {
   background-color: var(--accent-color);
+}
+
+.form-subscribe {
+  display: block;
+}
+
+.form-subscribe-box {
+  display: flex;
+  gap: 12px;
+}
+
+.form-input-subscribe {
+  display: block;
+  width: 358px;
+  height: 50px;
+  padding: 15px 0 15px 16px;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.03em;
+  color: var(--address-link-color);
+  background-color: var(--dark-beckground-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: var(--button-primary-box-shadow);
+}
+
+.subscribe-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 28px;
 }
 
 .filter {
