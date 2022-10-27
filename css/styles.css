@@ -18,7 +18,9 @@
   --works-overlay-background-color: rgba(47, 48, 58, 0.8);
   --portfolio-overlay-background-color: rgba(33, 150, 243, 0.9);
   --backdrop-overlay-background-color: rgba(0, 0, 0, 0.2);
-  --base-transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  --input-border-color: rgba(33, 33, 33, 0.2);
+  --textarea-placeholder-color: rgba(117, 117, 117, 0.5);
+  --base-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 p,
@@ -197,7 +199,8 @@ body {
 }
 
 .hero-button,
-.subscribe-button {
+.subscribe-button,
+.send-button {
   padding: 10px 32px;
   font-family: inherit;
   font-weight: 700;
@@ -216,7 +219,10 @@ body {
 .hero-button:active,
 .subscribe-button:hover,
 .subscribe-button:focus,
-.subscribe-button:active {
+.subscribe-button:active,
+.send-button:hover,
+.send-button:focus,
+.send-button:active {
   background-color: var(--hero-button-active-color);
 }
 
@@ -247,6 +253,7 @@ body {
   transform: translate(-50%, -50%) scale(1);
   width: 528px;
   height: 581px;
+  padding: 40px;
   background-color: var(--primary-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -525,11 +532,11 @@ textarea {
   background-color: var(--accent-color);
 }
 
-.form-subscribe {
-  display: block;
+.form-subscribe-box {
+  margin: 0 0 0 auto;
 }
 
-.form-subscribe-box {
+.form-subscribe {
   display: flex;
   gap: 12px;
 }
@@ -539,14 +546,19 @@ textarea {
   width: 358px;
   height: 50px;
   padding: 15px 0 15px 16px;
-  font-size: 16px;
-  line-height: calc(20 / 16);
-  letter-spacing: 0.03em;
-  color: var(--address-link-color);
   background-color: var(--dark-beckground-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   box-shadow: var(--button-primary-box-shadow);
+}
+
+.form-input-subscribe,
+.form-input-subscribe::placeholder {
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.03em;
+  color: var(--address-link-color);
+  outline: none;
 }
 
 .subscribe-button {
@@ -555,6 +567,118 @@ textarea {
   justify-content: center;
   gap: 10px;
   padding: 10px 28px;
+}
+
+.contact-form-title {
+  padding: 0 0 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+.form-label {
+  display: block;
+  margin: 0 0 4px;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+}
+
+.form-field {
+  position: relative;
+  margin: 0 0 10px 0;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 11px 12px 11px 42px;
+  border: 1px solid var(--input-border-color);
+  border-radius: 4px;
+  outline: none;
+  transition: border-color var(--base-transition);
+}
+
+.form-textarea {
+  height: 120px;
+  padding: 12px 16px;
+  margin: 0 0 20px 0;
+  color: var(--primary-text-color);
+}
+
+.form-textarea::placeholder {
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: var(--textarea-placeholder-color);
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: var(--accent-color);
+}
+
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  fill: currentColor;
+  transition: fill var(--base-transition);
+}
+
+.form-field:focus-within .form-icon {
+  fill: var(--accent-color);
+}
+
+.checkbox-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 30px 0;
+}
+
+.policy-link {
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+
+.check-box {
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin: 0 8.38px 0 0;
+  border: 2px solid var(--title-text-color);
+  border-radius: 3px;
+  transition: background-color var(--base-transition), border-color var(--base-transition);
+}
+
+.check-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity var(--base-transition);
+}
+
+.checkbox-input:checked + .check-box {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.checkbox-input:checked + .check-box .check-icon {
+  opacity: 1;
+}
+
+.send-button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 52px;
 }
 
 .filter {
