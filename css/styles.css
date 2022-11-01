@@ -82,13 +82,13 @@ a:focus {
   align-items: center;
 }
 
-.nav-list {
+.nav__list {
   display: flex;
   align-items: center;
 }
 
-.nav-list-item:not(:last-child),
-.contacts-item:not(:last-child) {
+.nav__item:not(:last-child),
+.contacts__item:not(:last-child) {
   margin: 0 50px 0 0;
 }
 
@@ -128,18 +128,18 @@ a:focus {
   letter-spacing: 0.02em;
 }
 
-.nav-link {
+.nav__link {
   position: relative;
   display: block;
   padding: 32px 0;
   color: var(--title-text-color);
 }
 
-.current {
+.nav__link--current {
   color: var(--accent-color);
 }
 
-.current::after {
+.nav__link--current::after {
   content: '';
   display: block;
   position: absolute;
@@ -151,7 +151,7 @@ a:focus {
   background-color: var(--accent-color);
 }
 
-.contacts-link {
+.contacts__link {
   display: flex;
   align-items: center;
   padding: 32px 0;
@@ -161,12 +161,12 @@ a:focus {
   transition: fill var(--base-transition), color var(--base-transition);
 }
 
-.contacts-link:hover,
-.contacts-link:focus {
+.contacts__link:hover,
+.contacts__link:focus {
   fill: var(--accent-color);
 }
 
-.hero-section {
+.hero {
   max-width: 1600px;
   padding: 200px 0;
   margin: 0 auto;
@@ -179,7 +179,7 @@ a:focus {
   background-position: center;
 }
 
-.hero-title {
+.hero__title {
   margin: 0 auto 30px auto;
   max-width: 696px;
   font-weight: 900;
@@ -199,7 +199,7 @@ a:focus {
   cursor: pointer;
 }
 
-.hero-button,
+.hero__button,
 .subscribe-button,
 .send-button {
   padding: 10px 32px;
@@ -215,9 +215,9 @@ a:focus {
   transition: background-color var(--base-transition);
 }
 
-.hero-button:hover,
-.hero-button:focus,
-.hero-button:active,
+.hero__button:hover,
+.hero__button:focus,
+.hero__button:active,
 .subscribe-button:hover,
 .subscribe-button:focus,
 .subscribe-button:active,
@@ -306,11 +306,11 @@ textarea {
   gap: 30px;
 }
 
-.features-item {
+.features__item {
   flex-basis: calc((100%-90) / 4);
 }
 
-.features-icon-container {
+.features__icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -320,7 +320,7 @@ textarea {
   border-radius: 4px;
 }
 
-.features-title {
+.features__title {
   margin: 0 0 10px;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -329,7 +329,7 @@ textarea {
   color: var(--title-text-color);
 }
 
-.features-text {
+.features__text {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
 }
