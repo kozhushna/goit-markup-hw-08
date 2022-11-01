@@ -20,7 +20,7 @@
   --backdrop-overlay-background-color: rgba(0, 0, 0, 0.2);
   --input-border-color: rgba(33, 33, 33, 0.2);
   --textarea-placeholder-color: rgba(117, 117, 117, 0.5);
-  --base-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --base-transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 p,
@@ -301,7 +301,7 @@ textarea {
   margin: -1px;
 }
 
-.features {
+.features__list {
   display: flex;
   gap: 30px;
 }
@@ -320,7 +320,7 @@ textarea {
   border-radius: 4px;
 }
 
-.features__title {
+.features__caption {
   margin: 0 0 10px;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -334,7 +334,9 @@ textarea {
   letter-spacing: 0.03em;
 }
 
-.section-title {
+.works__title,
+.team__title,
+.clients__title {
   margin: 0 0 50px;
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -344,19 +346,19 @@ textarea {
 }
 
 .works {
+  padding-top: 0;
+}
+
+.works__list {
   display: flex;
   gap: 30px;
 }
 
-.works-item {
+.works__item {
   position: relative;
 }
 
-.works-section {
-  padding-top: 0;
-}
-
-.work-title {
+.works__caption {
   position: absolute;
   display: flex;
   align-items: center;
@@ -373,29 +375,30 @@ textarea {
   background-color: var(--works-overlay-background-color);
 }
 
-.team-section {
+.team {
   background-color: var(--secondary-background-color);
 }
 
-.team {
+.team__list {
   display: flex;
 }
 
-.team-item {
+.team__item {
+  background-color: var(--primary-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-item:not(:last-child) {
+.team__item:not(:last-child) {
   margin: 0 30px 0 0;
 }
 
-.team-info {
+.team__info {
   padding: 30px 0 30px;
 }
 
-.team-title {
+.team__caption {
   margin: 0 0 10px;
   font-weight: 500;
   font-size: 16px;
@@ -405,7 +408,7 @@ textarea {
   color: var(--title-text-color);
 }
 
-.team-text {
+.team__text {
   margin: 0 0 16px;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -413,22 +416,18 @@ textarea {
   text-align: center;
 }
 
-.team-item {
-  background-color: var(--primary-background-color);
-}
-
-.soc-list {
+.soc {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
-.soc-item {
+.soc__item {
   width: 44px;
   height: 44px;
 }
 
-.soc-link {
+.soc__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -439,23 +438,23 @@ textarea {
   transition: background-color var(--base-transition), fill var(--base-transition);
 }
 
-.soc-link-team:hover,
-.soc-link-team:focus {
+.soc__link:hover,
+.soc__link:focus {
   background-color: var(--accent-color);
   fill: var(--white-text-color);
 }
 
-.clients {
+.clients__list {
   display: flex;
   gap: 30px;
 }
 
-.clients-item {
+.clients__item {
   flex-basis: calc((100% - 150px) / 6);
   height: 92px;
 }
 
-.clients-link {
+.clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -467,8 +466,8 @@ textarea {
   transition: border-color var(--base-transition), fill var(--base-transition);
 }
 
-.clients-link:hover,
-.clients-link:focus {
+.clients__link:hover,
+.clients__link:focus {
   fill: var(--accent-color);
   border-color: var(--accent-color);
 }
@@ -510,7 +509,7 @@ textarea {
   color: var(--address-link-color);
 }
 
-.soc-link-text,
+.connect__text,
 .form-subscribe-text {
   margin: 0 0 20px;
   font-weight: 700;
@@ -520,16 +519,16 @@ textarea {
   color: var(--white-text-color);
 }
 
-.soc-link-footer {
+.soc__link--dark {
   background-color: var(--soc-link-background-dark-color);
 }
 
-.soc-icon-footer {
+.soc__icon--light {
   fill: var(--white-text-color);
 }
 
-.soc-link-footer:hover,
-.soc-link-footer:focus {
+.soc__link--dark:hover,
+.soc__link--dark:focus {
   background-color: var(--accent-color);
 }
 
