@@ -56,20 +56,20 @@ body {
   padding: 0 15px;
 }
 
-.list {
+ul {
   list-style: none;
 }
 
-.link {
+a {
   text-decoration: none;
   transition: color var(--base-transition);
 }
 
-.link:hover {
+a:hover {
   color: var(--accent-color);
 }
 
-.link:focus {
+a:focus {
   color: var(--accent-color);
 }
 
