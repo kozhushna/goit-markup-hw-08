@@ -477,7 +477,7 @@ textarea {
   background-color: var(--dark-beckground-color);
 }
 
-.footer-container {
+.footer__container {
   display: flex;
   align-items: baseline;
 }
@@ -486,26 +486,26 @@ textarea {
   color: var(--white-text-color);
 }
 
-.address-box {
+.footer__address-box {
   margin: 0 70px 0 0;
   width: 231px;
 }
 
-.address {
+.address__list {
   font-style: normal;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
 }
 
-.address-item:not(:last-child) {
+.address__item:not(:last-child) {
   margin: 0 0 9px;
 }
 
-.city-link {
+.address__link--light {
   color: var(--white-text-color);
 }
 
-.address-link {
+.address__link {
   color: var(--address-link-color);
 }
 
