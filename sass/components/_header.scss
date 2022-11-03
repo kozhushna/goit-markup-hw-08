@@ -1,5 +1,5 @@
 .header {
-  border-bottom: 1px solid var(--border-header-color);
+  border-bottom: 1px solid $colorBorderHeader;
 }
 
 .header__container {
@@ -38,11 +38,11 @@
   position: relative;
   display: block;
   padding: 32px 0;
-  color: var(--title-text-color);
+  color: $colorDark;
 }
 
 .nav__link--current {
-  color: var(--accent-color);
+  color: $colorAccent;
 }
 
 .nav__link--current::after {
@@ -54,7 +54,7 @@
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  background-color: var(--accent-color);
+  background-color: $colorAccent;
 }
 
 .contacts__link {
@@ -62,12 +62,12 @@
   align-items: center;
   padding: 32px 0;
   gap: 10px;
-  color: var(--primary-text-color);
-  fill: var(--primary-text-color);
-  transition: fill var(--base-transition), color var(--base-transition);
+  color: $colorTextPrimary;
+  fill: $colorTextPrimary;
+  transition: fill $baseTransition, color $baseTransition;
 }
 
 .contacts__link:hover,
 .contacts__link:focus {
-  fill: var(--accent-color);
+  fill: $colorAccent;
 }

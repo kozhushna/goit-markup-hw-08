@@ -16,8 +16,8 @@ img {
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
-  color: var(--primary-text-color);
-  background-color: var(--primary-background-color);
+  color: $colorTextPrimary;
+  background-color: $colorBackgroundPrimary;
 }
 
 ul {
@@ -26,15 +26,15 @@ ul {
 
 a {
   text-decoration: none;
-  transition: color var(--base-transition);
+  transition: color $baseTransition;
 }
 
 a:hover {
-  color: var(--accent-color);
+  color: $colorAccent;
 }
 
 a:focus {
-  color: var(--accent-color);
+  color: $colorAccent;
 }
 
 textarea {

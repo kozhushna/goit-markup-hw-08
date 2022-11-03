@@ -3,7 +3,7 @@
   padding: 200px 0;
   margin: 0 auto;
   text-align: center;
-  background-color: var(--dark-beckground-color);
+  background-color: $colorBackgroundDark;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/hero.jpg');
   background-repeat: no-repeat;
@@ -19,5 +19,5 @@
   line-height: calc(60 / 44);
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--white-text-color);
+  color: $colorTextWhite;
 }

@@ -13,7 +13,7 @@
   align-items: center;
   height: 120px;
   margin: 0 0 30px;
-  background-color: var(--secondary-background-color);
+  background-color: $colorBackgroundSecondary;
   border-radius: 4px;
 }
 
@@ -23,7 +23,7 @@
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--title-text-color);
+  color: $colorDark;
 }
 
 .features__text {

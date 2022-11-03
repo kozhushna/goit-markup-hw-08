@@ -24,6 +24,6 @@
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--white-text-color);
-  background-color: var(--works-overlay-background-color);
+  color: $colorTextWhite;
+  background-color: $colorBackgroundWorksOverlay;
 }

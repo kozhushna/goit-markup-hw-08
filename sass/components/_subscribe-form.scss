@@ -12,10 +12,10 @@
   width: 358px;
   height: 50px;
   padding: 15px 0 15px 16px;
-  background-color: var(--dark-beckground-color);
+  background-color: $colorBackgroundDark;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  box-shadow: var(--button-primary-box-shadow);
+  box-shadow: $shadowButtonPrimaryBox;
 }
 
 .subscribe__input,
@@ -23,7 +23,7 @@
   font-size: 16px;
   line-height: calc(20 / 16);
   letter-spacing: 0.03em;
-  color: var(--address-link-color);
+  color: $colorAddressLink;
   outline: none;
 }
 

@@ -16,25 +16,25 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  fill: var(--clients-color);
-  transition: background-color var(--base-transition), fill var(--base-transition);
+  fill: $colorClients;
+  transition: background-color $baseTransition, fill $baseTransition;
 }
 
 .social__link:hover,
 .social__link:focus {
-  background-color: var(--accent-color);
-  fill: var(--white-text-color);
+  background-color: $colorAccent;
+  fill: $colorTextWhite;
 }
 
 .social__link--dark {
-  background-color: var(--soc-link-background-dark-color);
+  background-color: $colorBackgroundSocialLinkDark;
 }
 
 .social__icon--light {
-  fill: var(--white-text-color);
+  fill: $colorTextWhite;
 }
 
 .social__link--dark:hover,
 .social__link--dark:focus {
-  background-color: var(--accent-color);
+  background-color: $colorAccent;
 }

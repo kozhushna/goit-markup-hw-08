@@ -1,6 +1,6 @@
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .section-title {
@@ -9,5 +9,5 @@
   line-height: calc(42 / 36);
   letter-spacing: 0.03em;
   text-align: center;
-  color: var(--title-text-color);
+  color: $colorDark;
 }

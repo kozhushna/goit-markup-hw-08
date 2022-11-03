@@ -17,14 +17,14 @@
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
 
-  color: var(--white-text-color);
-  background-color: var(--accent-color);
-  box-shadow: var(--button-primary-box-shadow);
-  transition: background-color var(--base-transition);
+  color: $colorTextWhite;
+  background-color: $colorAccent;
+  box-shadow: $shadowButtonPrimaryBox;
+  transition: background-color $baseTransition;
 }
 
 .primary-button:hover,
 .primary-button:focus,
 .primary-button:active {
-  background-color: var(--hero-button-active-color);
+  background-color: $colorHeroButtonActive;
 }

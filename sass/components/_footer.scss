@@ -1,6 +1,6 @@
 .footer {
   padding: 60px 0;
-  background-color: var(--dark-beckground-color);
+  background-color: $colorBackgroundDark;
 }
 
 .footer__container {
@@ -27,11 +27,11 @@
 }
 
 .address__link--light {
-  color: var(--white-text-color);
+  color: $colorTextWhite;
 }
 
 .address__link {
-  color: var(--address-link-color);
+  color: $colorAddressLink;
 }
 
 .footer__text {
@@ -40,5 +40,5 @@
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--white-text-color);
+  color: $colorTextWhite;
 }
