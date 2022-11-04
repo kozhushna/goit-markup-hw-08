@@ -14,7 +14,7 @@ img {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: $fontFamilyMain;
   font-size: 14px;
   color: $colorTextPrimary;
   background-color: $colorBackgroundPrimary;
