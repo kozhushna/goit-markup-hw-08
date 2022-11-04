@@ -18,10 +18,10 @@
   border-radius: $borderRadiusPrimary;
   fill: $colorClients;
   transition: border-color $baseTransition, fill $baseTransition;
-}
 
-.clients__link:hover,
-.clients__link:focus {
-  fill: $colorAccent;
-  border-color: $colorAccent;
+  &:hover,
+  &:focus {
+    fill: $colorAccent;
+    border-color: $colorAccent;
+  }
 }

@@ -9,6 +9,10 @@
 .form__field {
   position: relative;
   margin: 0 0 10px 0;
+
+  &:focus-within .form__icon {
+    fill: $colorAccent;
+  }
 }
 
 .form__input,
@@ -19,6 +23,10 @@
   border-radius: $borderRadiusPrimary;
   outline: none;
   transition: border-color $baseTransition;
+
+  &:focus {
+    border-color: $colorAccent;
+  }
 }
 
 .form__textarea {
@@ -35,11 +43,6 @@
   color: $colorTextareaPlaceholder;
 }
 
-.form__input:focus,
-.form__textarea:focus {
-  border-color: $colorAccent;
-}
-
 .form__icon {
   position: absolute;
   top: 50%;
@@ -47,10 +50,6 @@
   fill: $colorDark;
   transform: translateY(-50%);
   transition: fill $baseTransition;
-}
-
-.form__field:focus-within .form__icon {
-  fill: $colorAccent;
 }
 
 .form__checkbox-label {
@@ -85,14 +84,27 @@
   transition: opacity $baseTransition;
 }
 
-.form__checkbox-input:checked + .form__checkbox {
-  background-color: $colorAccent;
-  border-color: $colorAccent;
+.form__checkbox-input {
+  &:checked {
+    & + .form__checkbox {
+      background-color: $colorAccent;
+      border-color: $colorAccent;
+
+      .form__checkbox-icon {
+        opacity: 1;
+      }
+    }
+  }
 }
 
-.form__checkbox-input:checked + .form__checkbox .form__checkbox-icon {
-  opacity: 1;
-}
+// .form__checkbox-input:checked + .form__checkbox {
+//   background-color: $colorAccent;
+//   border-color: $colorAccent;
+// }
+
+// .form__checkbox-input:checked + .form__checkbox .form__checkbox-icon {
+//   opacity: 1;
+// }
 
 .form__send-button {
   display: block;

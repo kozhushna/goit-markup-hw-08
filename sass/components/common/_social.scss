@@ -18,23 +18,23 @@
   border-radius: 50%;
   fill: $colorClients;
   transition: background-color $baseTransition, fill $baseTransition;
-}
 
-.social__link:hover,
-.social__link:focus {
-  background-color: $colorAccent;
-  fill: $colorTextWhite;
+  &:hover,
+  &:focus {
+    background-color: $colorAccent;
+    fill: $colorTextWhite;
+  }
 }
 
 .social__link--dark {
   background-color: $colorBackgroundSocialLinkDark;
+
+  &:hover,
+  &:focus {
+    background-color: $colorAccent;
+  }
 }
 
 .social__icon--light {
   fill: $colorTextWhite;
-}
-
-.social__link--dark:hover,
-.social__link--dark:focus {
-  background-color: $colorAccent;
 }

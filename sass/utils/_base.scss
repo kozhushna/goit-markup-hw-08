@@ -27,14 +27,11 @@ ul {
 a {
   text-decoration: none;
   transition: color $baseTransition;
-}
 
-a:hover {
-  color: $colorAccent;
-}
-
-a:focus {
-  color: $colorAccent;
+  &:hover,
+  &:focus {
+    color: $colorAccent;
+  }
 }
 
 textarea {

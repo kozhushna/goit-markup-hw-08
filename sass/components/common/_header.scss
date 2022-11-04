@@ -65,9 +65,9 @@
   color: $colorTextPrimary;
   fill: $colorTextPrimary;
   transition: fill $baseTransition, color $baseTransition;
-}
 
-.contacts__link:hover,
-.contacts__link:focus {
-  fill: $colorAccent;
+  &:hover,
+  &:focus {
+    fill: $colorAccent;
+  }
 }
