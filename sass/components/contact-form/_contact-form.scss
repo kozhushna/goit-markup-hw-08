@@ -19,8 +19,7 @@
 .form__textarea {
   width: 100%;
   padding: 11px 12px 11px 42px;
-  border: 1px solid $colorInputBorder;
-  border-radius: $borderRadiusPrimary;
+  @include border($colorBorderInput);
   outline: none;
   transition: border-color $baseTransition;
 
@@ -70,8 +69,7 @@
   width: 16px;
   height: 15px;
   margin: 0 8.38px 0 0;
-  border: 2px solid $colorDark;
-  border-radius: 3px;
+  @include border($colorDark, 2px, 3px);
   transition: background-color $baseTransition, border-color $baseTransition;
 }
 
@@ -96,15 +94,6 @@
     }
   }
 }
-
-// .form__checkbox-input:checked + .form__checkbox {
-//   background-color: $colorAccent;
-//   border-color: $colorAccent;
-// }
-
-// .form__checkbox-input:checked + .form__checkbox .form__checkbox-icon {
-//   opacity: 1;
-// }
 
 .form__send-button {
   display: block;

@@ -321,8 +321,8 @@ ul {
 
 a {
   text-decoration: none;
-  -webkit-transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 a:hover, a:focus {
   color: #2196f3;
@@ -330,6 +330,16 @@ a:hover, a:focus {
 
 textarea {
   resize: none;
+}
+
+.filter__button, .primary-button {
+  font-family: inherit;
+  text-align: center;
+  border-radius: 4px;
+  border: none;
+}
+.filter__button:hover, .primary-button:hover {
+  cursor: pointer;
 }
 
 .visually-hidden {
@@ -346,16 +356,6 @@ textarea {
   margin: -1px;
 }
 
-.button {
-  font-family: inherit;
-  text-align: center;
-  border-radius: 4px;
-  border: none;
-}
-.button:hover {
-  cursor: pointer;
-}
-
 .primary-button {
   padding: 10px 32px;
   font-weight: 700;
@@ -366,8 +366,8 @@ textarea {
   background-color: #2196f3;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  -webkit-transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .primary-button:hover, .primary-button:focus, .primary-button:active {
   background-color: #188ce8;
@@ -511,8 +511,8 @@ textarea {
   gap: 10px;
   color: #757575;
   fill: #757575;
-  -webkit-transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1), color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1), color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts__link:hover, .contacts__link:focus {
   fill: #2196f3;
@@ -579,8 +579,8 @@ textarea {
   height: 100%;
   border-radius: 50%;
   fill: #afb1b8;
-  -webkit-transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1), fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1), fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social__link:hover, .social__link:focus {
   background-color: #2196f3;
@@ -699,8 +699,8 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
-  -webkit-transition: border-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form__input:focus,
 .form__textarea:focus {
@@ -756,8 +756,8 @@ textarea {
   fill: #212121;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  -webkit-transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form__checkbox-label {
@@ -786,8 +786,8 @@ textarea {
   margin: 0 8.38px 0 0;
   border: 2px solid #212121;
   border-radius: 3px;
-  -webkit-transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1), border-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1), border-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form__checkbox-icon {
@@ -797,8 +797,8 @@ textarea {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   opacity: 0;
-  -webkit-transition: opacity 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form__checkbox-input:checked + .form__checkbox {
@@ -823,8 +823,8 @@ textarea {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  -webkit-transition: opacity 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -848,10 +848,10 @@ textarea {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  -webkit-transition: -webkit-transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__close {
@@ -871,10 +871,10 @@ textarea {
   height: 30px;
   padding: 0;
   background-color: #ffffff;
-  border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  -webkit-transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 50%;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__close:hover, .modal__close:focus {
   cursor: pointer;
@@ -919,8 +919,8 @@ textarea {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
-  -webkit-transition: border-color 2500ms cubic-bezier(0.4, 0, 0.2, 1), fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border-color 2500ms cubic-bezier(0.4, 0, 0.2, 1), fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients__link:hover, .clients__link:focus {
   fill: #2196f3;
@@ -1083,11 +1083,8 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 8px;
   margin: 0 0 50px;
-}
-
-.filter__item:not(:last-child) {
-  margin: 0 8px 0 0;
 }
 
 .filter__button {
@@ -1098,10 +1095,10 @@ textarea {
   letter-spacing: 0.03em;
   color: #212121;
   background-color: #f5f4fa;
-  -webkit-transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter__button:hover, .filter__button:focus, .filter__button:active {
   color: #ffffff;
@@ -1149,15 +1146,16 @@ textarea {
   background-color: rgba(33, 150, 243, 0.9);
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-  -webkit-transition: -webkit-transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio__info {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
+  border-radius: 4px;
   border-top: none;
 }
 
@@ -1178,10 +1176,10 @@ textarea {
 .portfolio__link {
   display: block;
   color: #757575;
-  -webkit-transition: -webkit-box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio__link:hover, .portfolio__link:focus {
   color: #757575;

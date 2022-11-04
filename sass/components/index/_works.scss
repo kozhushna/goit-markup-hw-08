@@ -13,9 +13,7 @@
 
 .works__caption {
   position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flexCentered();
   bottom: 0;
   left: 0;
   width: 100%;

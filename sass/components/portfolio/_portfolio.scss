@@ -12,9 +12,7 @@
 
 .portfolio__overlay {
   position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flexCentered();
   top: 0;
   left: 0;
   width: 100%;
@@ -31,7 +29,7 @@
 
 .portfolio__info {
   padding: 20px 24px;
-  border: 1px solid $colorBorderPortfolioCards;
+  @include border($colorBorderPortfolioCards);
   border-top: none;
 }
 
