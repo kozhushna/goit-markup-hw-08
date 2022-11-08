@@ -8,3 +8,9 @@
     cursor: pointer;
   }
 }
+
+%flexCentered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

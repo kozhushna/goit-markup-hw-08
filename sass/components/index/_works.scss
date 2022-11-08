@@ -1,8 +1,4 @@
 .works {
-  padding-top: 0;
-}
-
-.works__list {
   display: flex;
   gap: 30px;
 }
@@ -13,7 +9,7 @@
 
 .works__caption {
   position: absolute;
-  @include flexCentered();
+  @extend %flexCentered;
   bottom: 0;
   left: 0;
   width: 100%;

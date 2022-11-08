@@ -1,4 +1,4 @@
-.features__list {
+.features {
   display: flex;
   gap: 30px;
 }
@@ -7,7 +7,7 @@
   flex-basis: calc((100% - 90px) / 4);
 }
 
-.features__icon {
+.features__box {
   display: flex;
   justify-content: center;
   align-items: center;

@@ -3,7 +3,15 @@
   padding-bottom: 94px;
 }
 
-.section-title {
+.section--no-padding-top {
+  padding-top: 0;
+}
+
+.section--background-secondary {
+  background-color: $colorBackgroundSecondary;
+}
+
+.section__title {
   margin: 0 0 50px;
   font-size: 36px;
   line-height: calc(42 / 36);

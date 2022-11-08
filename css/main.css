@@ -342,6 +342,18 @@ textarea {
   cursor: pointer;
 }
 
+.portfolio__overlay, .filter, .works__caption, .subscribe__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -528,11 +540,11 @@ textarea {
   color: #2196f3;
 }
 
-.logo__part--dark {
+.logo__dark {
   color: #000000;
 }
 
-.logo__part--light {
+.logo__light {
   color: #ffffff;
 }
 
@@ -541,7 +553,15 @@ textarea {
   padding-bottom: 94px;
 }
 
-.section-title {
+.section--no-padding-top {
+  padding-top: 0;
+}
+
+.section--background-secondary {
+  background-color: #f5f4fa;
+}
+
+.section__title {
   margin: 0 0 50px;
   font-size: 36px;
   line-height: 1.1666666667;
@@ -663,15 +683,6 @@ textarea {
 }
 
 .subscribe__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   gap: 10px;
   padding: 10px 28px;
 }
@@ -891,7 +902,7 @@ textarea {
   color: #212121;
 }
 
-.clients__list {
+.clients {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -927,7 +938,7 @@ textarea {
   border-color: #2196f3;
 }
 
-.features__list {
+.features {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -939,7 +950,7 @@ textarea {
       flex-basis: calc((100% - 90px) / 4);
 }
 
-.features__icon {
+.features__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -994,10 +1005,6 @@ textarea {
 }
 
 .team {
-  background-color: #f5f4fa;
-}
-
-.team__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1036,10 +1043,6 @@ textarea {
 }
 
 .works {
-  padding-top: 0;
-}
-
-.works__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1052,15 +1055,6 @@ textarea {
 
 .works__caption {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -1074,15 +1068,6 @@ textarea {
 }
 
 .filter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   gap: 8px;
   margin: 0 0 50px;
 }
@@ -1125,15 +1110,6 @@ textarea {
 
 .portfolio__overlay {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   top: 0;
   left: 0;
   width: 100%;

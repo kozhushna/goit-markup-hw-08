@@ -12,7 +12,7 @@
 
 .portfolio__overlay {
   position: absolute;
-  @include flexCentered();
+  @extend %flexCentered;
   top: 0;
   left: 0;
   width: 100%;
