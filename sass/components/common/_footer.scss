@@ -1,23 +1,32 @@
 .footer {
   padding: 60px 0;
   background-color: $colorBackgroundDark;
+
+  &__container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__logo {
+    margin: 0 0 20px;
+  }
+
+  &__address-box {
+    margin: 0 70px 0 0;
+    width: 231px;
+  }
+
+  &__text {
+    margin: 0 0 20px;
+    font-weight: 700;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $colorTextWhite;
+  }
 }
 
-.footer__container {
-  display: flex;
-  align-items: baseline;
-}
-
-.footer__logo {
-  margin: 0 0 20px;
-}
-
-.footer__address-box {
-  margin: 0 70px 0 0;
-  width: 231px;
-}
-
-.address__list {
+.address {
   font-style: normal;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
@@ -33,13 +42,4 @@
 
 .address__link {
   color: $colorAddressLink;
-}
-
-.footer__text {
-  margin: 0 0 20px;
-  font-weight: 700;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: $colorTextWhite;
 }
