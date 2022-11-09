@@ -424,17 +424,14 @@ textarea {
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
 }
-
 .address__item:not(:last-child) {
   margin: 0 0 9px;
 }
-
-.address__link--light {
-  color: #ffffff;
-}
-
 .address__link {
   color: rgba(255, 255, 255, 0.6);
+}
+.address__link--light {
+  color: #ffffff;
 }
 
 .header {
