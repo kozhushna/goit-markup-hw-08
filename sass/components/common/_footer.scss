@@ -3,8 +3,28 @@
   background-color: $colorBackgroundDark;
 
   &__container {
-    display: flex;
-    align-items: baseline;
+    text-align: center;
+    @include for-size(desktop) {
+      display: flex;
+      align-items: baseline;
+      text-align: inherit;
+    }
+  }
+
+  &__holder {
+    margin: 0 0 60px 0;
+
+    @include for-size(tablet) {
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      gap: 165px;
+    }
+
+    @include for-size(desktop) {
+      gap: 70px;
+      margin: 0;
+    }
   }
 
   &__logo {
@@ -12,8 +32,13 @@
   }
 
   &__address-box {
-    margin: 0 70px 0 0;
-    width: 231px;
+    @include for-size(mobile-only) {
+      margin: 0 0 60px 0;
+    }
+
+    @include for-size(desktop) {
+      width: 231px;
+    }
   }
 
   &__text {
@@ -43,3 +68,7 @@
     color: $colorTextWhite;
   }
 }
+
+// .connect {
+//   margin: 60px 0;
+// }

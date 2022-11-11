@@ -1,36 +1,44 @@
 .team {
-  display: flex;
-}
-
-.team__item {
-  background-color: $colorBackgroundPrimary;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-
-  &:not(:last-child) {
-    margin: 0 30px 0 0;
+  @include for-size(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
   }
-}
 
-.team__info {
-  padding: 30px 0 30px;
-}
+  &__item {
+    @include for-size(tablet) {
+      flex-basis: calc((100% - 30px) / 2);
+    }
 
-.team__caption {
-  margin: 0 0 10px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: calc(19 / 16);
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: $colorDark;
-}
+    @include for-size(desktop) {
+      flex-basis: calc((100% - 90px) / 4);
+    }
 
-.team__text {
-  margin: 0 0 16px;
-  font-size: 16px;
-  line-height: calc(19 / 16);
-  letter-spacing: 0.03em;
-  text-align: center;
+    background-color: $colorBackgroundPrimary;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  &__info {
+    padding: 30px 0 30px;
+  }
+
+  &__caption {
+    margin: 0 0 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $colorDark;
+  }
+
+  &__text {
+    margin: 0 0 16px;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
 }

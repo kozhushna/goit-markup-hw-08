@@ -37,3 +37,14 @@ a {
 textarea {
   resize: none;
 }
+
+section,
+header,
+footer,
+.backdrop {
+  display: none;
+}
+
+.block {
+  display: block;
+}

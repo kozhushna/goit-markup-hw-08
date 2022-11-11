@@ -4,17 +4,29 @@
 
 .subscribe__form {
   display: flex;
-  gap: 12px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  @include for-size(desktop) {
+    flex-direction: row;
+    gap: 12px;
+  }
 }
 
 .subscribe__input {
   display: block;
-  width: 358px;
+  max-width: 450px;
+  width: 100%;
   height: 50px;
   padding: 15px 0 15px 16px;
   background-color: $colorBackgroundDark;
   @include border(rgba(255, 255, 255, 0.3));
   box-shadow: $shadowButtonPrimaryBox;
+
+  @include for-size(desktop) {
+    width: 358px;
+    margin: 0;
+  }
 }
 
 .subscribe__input,

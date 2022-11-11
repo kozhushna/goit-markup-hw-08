@@ -1,6 +1,6 @@
 .hero {
   max-width: 1600px;
-  padding: 200px 0;
+  padding: 118px 0;
   margin: 0 auto;
   text-align: center;
   background-color: $colorBackgroundDark;
@@ -9,15 +9,25 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
 
-.hero__title {
-  margin: 0 auto 30px auto;
-  max-width: 696px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: calc(60 / 44);
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: $colorTextWhite;
+  @include for-size(desktop) {
+    padding: 200px 0;
+  }
+
+  &__title {
+    margin: 0 auto 30px auto;
+    max-width: 360px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: calc(42 / 26);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $colorTextWhite;
+
+    @include for-size(desktop) {
+      font-size: 44px;
+      line-height: calc(60 / 44);
+      max-width: 696px;
+    }
+  }
 }
