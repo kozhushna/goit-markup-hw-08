@@ -1,46 +1,46 @@
 .subscribe {
   margin: 0 0 0 auto;
-}
 
-.subscribe__form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 
-  @include for-size(desktop) {
-    flex-direction: row;
-    gap: 12px;
+    @include for-size(desktop) {
+      flex-direction: row;
+      gap: 12px;
+    }
   }
-}
 
-.subscribe__input {
-  display: block;
-  max-width: 450px;
-  width: 100%;
-  height: 50px;
-  padding: 15px 0 15px 16px;
-  background-color: $colorBackgroundDark;
-  @include border(rgba(255, 255, 255, 0.3));
-  box-shadow: $shadowButtonPrimaryBox;
+  &__input {
+    display: block;
+    max-width: 450px;
+    width: 100%;
+    height: 50px;
+    padding: 15px 0 15px 16px;
+    background-color: $colorBackgroundDark;
+    @include border(rgba(255, 255, 255, 0.3));
+    box-shadow: $shadowButtonPrimaryBox;
 
-  @include for-size(desktop) {
-    width: 358px;
-    margin: 0;
+    @include for-size(desktop) {
+      width: 358px;
+      margin: 0;
+    }
   }
-}
 
-.subscribe__input,
-.subscribe__input::placeholder {
-  font-size: 16px;
-  line-height: calc(20 / 16);
-  letter-spacing: 0.03em;
-  color: $colorAddressLink;
-  outline: none;
-}
+  &__input,
+  &__input::placeholder {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.03em;
+    color: $colorAddressLink;
+    outline: none;
+  }
 
-.subscribe__button {
-  @extend %flexCentered;
-  gap: 10px;
-  padding: 10px 28px;
+  &__button {
+    @extend %flexCentered;
+    gap: 10px;
+    padding: 10px 28px;
+  }
 }
