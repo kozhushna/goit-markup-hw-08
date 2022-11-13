@@ -1,28 +1,33 @@
 .header {
   border-bottom: 1px solid $colorBorderHeader;
-}
 
-.header__container {
-  display: flex;
-  align-items: center;
-}
+  &__container {
+    display: flex;
+    align-items: center;
+    height: 60px;
 
-.header__logo {
-  margin: 0 93px 0 0;
-}
-
-.header__mobile-menu {
-  margin: 0 0 0 auto;
-  padding: 0;
-  background-color: transparent;
-  border: none;
-
-  @include for-size(tablet) {
-    display: none;
+    @include for-size(tablet) {
+      height: 80px;
+    }
   }
-  &:hover,
-  &:focus {
-    fill: $colorAccent;
+
+  &__logo {
+    margin: 0 93px 0 0;
+  }
+
+  &__mobile-menu {
+    margin: 0 0 0 auto;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+
+    @include for-size(tablet) {
+      display: none;
+    }
+    &:hover,
+    &:focus {
+      fill: $colorAccent;
+    }
   }
 }
 
