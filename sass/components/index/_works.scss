@@ -1,23 +1,30 @@
+.works-section {
+  display: none;
+  @include for-size(desktop) {
+    display: block;
+  }
+}
+
 .works {
   display: flex;
   gap: 30px;
-}
 
-.works__item {
-  position: relative;
-}
+  &__item {
+    position: relative;
+  }
 
-.works__caption {
-  position: absolute;
-  @extend %flexCentered;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 70px;
-  font-weight: 700;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: $colorTextWhite;
-  background-color: $colorBackgroundWorksOverlay;
+  &__caption {
+    position: absolute;
+    @extend %flexCentered;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    font-weight: 700;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $colorTextWhite;
+    background-color: $colorBackgroundWorksOverlay;
+  }
 }
