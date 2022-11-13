@@ -56,6 +56,10 @@
 
   &__link {
     color: $colorDark;
+
+    &--current {
+      color: $colorAccent;
+    }
   }
 }
 

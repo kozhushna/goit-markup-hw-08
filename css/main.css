@@ -706,6 +706,9 @@ textarea {
 .mobile-menu__link {
   color: #212121;
 }
+.mobile-menu__link--current {
+  color: #2196f3;
+}
 
 .mobile-menu-contacts {
   display: -webkit-box;
