@@ -11,6 +11,9 @@
     }
 
     @include for-size(tablet) {
+      &:not(:last-child) {
+        margin: 0;
+      }
       flex-basis: calc((100% - 60px) / 2);
     }
 

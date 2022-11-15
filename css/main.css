@@ -1259,6 +1259,9 @@ textarea {
     -ms-flex-preferred-size: calc((100% - 60px) / 2);
         flex-basis: calc((100% - 60px) / 2);
   }
+  .features__item:not(:last-child) {
+    margin: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .features__item {
