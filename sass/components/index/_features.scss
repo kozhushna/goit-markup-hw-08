@@ -14,7 +14,7 @@
       &:not(:last-child) {
         margin: 0;
       }
-      flex-basis: calc((100% - 60px) / 2);
+      flex-basis: calc((100% - 30px) / 2);
     }
 
     @include for-size(desktop) {

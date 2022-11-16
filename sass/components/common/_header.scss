@@ -12,7 +12,13 @@
   }
 
   &__logo {
-    margin: 0 93px 0 0;
+    @include for-size(tablet-only) {
+      margin: 0 88px 0 0;
+    }
+
+    @include for-size(desktop) {
+      margin: 0 93px 0 0;
+    }
   }
 
   &__mobile-menu {
